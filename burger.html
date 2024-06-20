@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cafe - Burgers</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .header img {
+            width: 200px;
+            height: auto;
+        }
+        .header h1 {
+            margin-top: 15px;
+            font-size: 36px;
+            color: #333;
+        }
+        .burgers-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            justify-items: center;
+        }
+        .burger {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .burger:hover {
+            transform: scale(1.05);
+        }
+        .burger img {
+            width: 100%;
+            height: auto;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            transition: transform 0.5s ease;
+        }
+        .burger:hover img {
+            transform: translateY(-20%);
+        }
+        .burger-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .burger:hover .burger-info {
+            transform: translateY(-100%);
+        }
+        .burger-info h2 {
+            margin-top: 0;
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .burger-info p {
+            margin: 0;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="log.jpg.png" alt="Cafe Logo">
+        <h1>RR Cafe</h1>
+    </div>
+    <div class="burgers-container">
+        <div class="burger">
+            <img src="burger1.jpg" alt="Burger 1">
+            <div class="burger-info">
+                <h2>Classic Cheeseburger</h2>
+                    <p>Price: 89</p>
+            </div>
+        </div>
+        <div class="burger">
+            <img src="burger2.jpg" alt="Burger 2">
+            <div class="burger-info">
+                <h2>BBQ Bacon Burger</h2>
+                <p>Price: 99</p>
+            </div>
+        </div>
+        <div class="burger">
+            <img src="burger.jpg" alt="Burger 3">
+            <div class="burger-info">
+                <h2>Double Cheeseburger</h2>
+                <p>Price: 109</p>
+            </div>
+        </div>
+        <div class="burger">
+            <img src="burger4.jpg" alt="Burger 4">
+            <div class="burger-info">
+                <h2>Veggie Burger</h2>
+                <p>Price: 79</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

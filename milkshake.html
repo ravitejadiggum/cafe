@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cafe - Milkshakes</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .header img {
+            width: 150px;
+            height: auto;
+        }
+        .header h1 {
+            margin-top: 10px;
+            font-size: 36px;
+            color: #333;
+        }
+        .milkshakes-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .milkshake {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            width: 250px;
+        }
+        .milkshake:hover {
+            transform: scale(1.05);
+        }
+        .milkshake img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px 15px 0 0;
+        }
+        .milkshake-info {
+            padding: 20px;
+        }
+        .milkshake-info h2 {
+            margin-top: 0;
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .milkshake-info p {
+            margin: 0;
+            color: #666;
+        }
+        .milkshake-info .price {
+            font-weight: bold;
+            color: #e83e8c;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="log.jpg.png" alt="Cafe Logo">
+        <h1>RR Cafe</h1>
+    </div>
+    <div class="milkshakes-container">
+        <div class="milkshake">
+            <img src="milkshake1.jpg" alt="Milkshake 1">
+            <div class="milkshake-info">
+                <h2>Vanilla Dream</h2>
+                <p>A classic vanilla milkshake topped with whipped cream and a cherry on top.</p>
+                <p class="price">₹59</p>
+            </div>
+        </div>
+        <div class="milkshake">
+            <img src="milkshake2.jpg" alt="Milkshake 2">
+            <div class="milkshake-info">
+                <h2>Chocolate Delight</h2>
+                <p>Rich chocolate milkshake with chocolate syrup, chocolate chips, and chocolate sprinkles.</p>
+                <p class="price">₹69</p>
+            </div>
+        </div>
+        <div class="milkshake">
+            <img src="milkshake3.jpg" alt="Milkshake 3">
+            <div class="milkshake-info">
+                <h2>Strawberry Bliss</h2>
+                <p>Refreshing strawberry milkshake made with fresh strawberries and strawberry syrup.</p>
+                <p class="price">₹69</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cafe - Pizzas</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .header img {
+            width: 150px;
+            height: auto;
+        }
+        .header h1 {
+            margin-top: 10px;
+            font-size: 36px;
+            color: #333;
+        }
+        .pizzas-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            justify-items: center;
+        }
+        .pizza {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .pizza:hover {
+            transform: scale(1.05);
+        }
+        .pizza img {
+            width: 100%;
+            height: auto;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .pizza-info {
+            padding: 20px;
+        }
+        .pizza-info h2 {
+            margin-top: 0;
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .pizza-info p {
+            margin: 0;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="log.jpg.png" alt="Cafe Logo">
+        <h1>RR Cafe</h1>
+    </div>
+    <div class="pizzas-container">
+        <div class="pizza">
+            <img src="pizza1.jpg" alt="Pizza 1">
+            <div class="pizza-info">
+                <h2>Margherita Pizza</h2>
+                <p>Classic Italian pizza topped with tomato sauce, mozzarella cheese, and fresh basil leaves.</p>
+                <p>Price:₹99</p>
+            </div>
+        </div>
+        <div class="pizza">
+            <img src="pizza2.jpg" alt="Pizza 2">
+            <div class="pizza-info">
+                <h2>Pepperoni Pizza</h2>
+                <p>Traditional pizza topped with tomato sauce, mozzarella cheese, and slices of spicy pepperoni.</p>
+                <p>Price: ₹109</p>
+            </div>
+        </div>
+        <div class="pizza">
+            <img src="pizza3.jpg" alt="Pizza 3">
+            <div class="pizza-info">
+                <h2>Hawaiian Pizza</h2>
+                <p>Delicious pizza with tomato sauce, mozzarella cheese, ham, and pineapple slices.</p>
+                <p>Price:₹129</p>
+            </div>
+        </div>
+        <div class="pizza">
+            <img src="pizza4.jpg" alt="Pizza 4">
+            <div class="pizza-info">
+                <h2>Veggie Supreme Pizza</h2>
+                <p>Fresh vegetable pizza topped with tomato sauce, mozzarella cheese, bell peppers, onions, mushrooms, and olives.</p>
+                <p>Price: ₹119</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
